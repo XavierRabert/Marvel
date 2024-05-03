@@ -1,15 +1,19 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, computed, signal } from '@angular/core';
 import {
-  BehaviorSubject,
-  combineLatest,
+  catchError,
   concatAll,
   filter,
   map,
+  of,
   shareReplay,
+  switchMap,
+  take,
   toArray,
 } from 'rxjs';
 import { Character } from '../types/characters';
+import { Result } from '../types/generic';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 
 @Injectable({
   providedIn: 'root',
@@ -17,14 +21,10 @@ import { Character } from '../types/characters';
 export class CharactersService {
   constructor(private http: HttpClient) {}
 
-  private characterSelectedSubject = new BehaviorSubject<Number | undefined>(
-    undefined
-  );
-
-  readonly characterSelected$ = this.characterSelectedSubject.asObservable();
+  readonly characterSelectedId = signal(0);
 
   readonly characters$ = this.http
-    .get<Character[]>('public/characters?limit=50')
+    .get<Character[]>('public/characters?limit=100')
     .pipe(
       filter(Boolean),
       map((data: any) => {
@@ -33,40 +33,39 @@ export class CharactersService {
       concatAll(),
       filter((char) => !char.thumbnail.path.includes('image_not_available')),
       toArray(),
-      shareReplay(1)
+      take(50),
+      shareReplay(1),
+      map((data: Character[]) => ({ data: data } as Result<Character[]>))
     );
 
-  readonly character$ = combineLatest([
-    this.characters$,
-    this.characterSelected$,
-  ]).pipe(
-    map(([characters, selectedCharacterId]) =>
-      characters.find((char: Character) => char.id === selectedCharacterId)
-    )
+  private charactersResult = toSignal(this.characters$, {
+    initialValue: { data: [] } as Result<Character[]>,
+  });
+
+  characters = computed(() => this.charactersResult().data);
+  charactersError = computed(() => this.charactersResult().error);
+
+  private characterResult$ = toObservable(this.characterSelectedId).pipe(
+    filter(Boolean),
+    switchMap((id) => {
+      return this.http.get<Character>('public/comics/' + id).pipe(
+        catchError((err) =>
+          of({
+            data: undefined,
+            error: err,
+          } as Result<Character>)
+        )
+      );
+    }),
+    map((data) => ({ data: data } as Result<Character>))
   );
 
+  private characterResult = toSignal(this.characterResult$);
+
+  character = computed(() => this.characterResult()?.data);
+  characterError = computed(() => this.characterResult()?.error);
+
   characterSelected(selectedCharacterId: number): void {
-    this.characterSelectedSubject.next(selectedCharacterId);
+    this.characterSelectedId.set(selectedCharacterId);
   }
-
-  //  characterId$
-  // getCharacters(): Observable<any> {
-  //   return this.http.get('public/characters?limit=50').pipe(
-  //     tap((data) => console.log('Http.get getCharacters', data)),
-  //     map((data: any) => {
-  //       if (data) return data.data.results;
-  //       return data;
-  //     })
-  //   );
-  // }
-
-  // getCharDetails(id: string) {
-  //   return this.http.get('public/characters/' + id).pipe(
-  //     tap((data) => console.log('Http.get getCharacter.id', data)),
-  //     map((data: any) => {
-  //       if (data) return data.data.results;
-  //       return data;
-  //     })
-  //   );
-  // }
 }

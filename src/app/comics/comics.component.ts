@@ -1,27 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Subscription, tap } from 'rxjs';
 import { ComicsService } from '../services/comics.service';
+import { ComicCardComponent } from './comic-card/comic-card.component';
 
 @Component({
   selector: 'app-comics',
   standalone: true,
-  imports: [],
+  imports: [ComicCardComponent],
   templateUrl: './comics.component.html',
   styleUrl: './comics.component.css',
 })
 export class ComicsComponent {
-  comics!: any;
-  subComics!: Subscription;
+  private comicsService = inject(ComicsService);
 
-  constructor(private comicsService: ComicsService) {}
-
-  ngOnInit(): void {
-    this.subComics = this.comicsService
-      .getComics()
-      .subscribe((comics) => (this.comics = comics));
-  }
-
-  ngOnDestroy(): void {
-    this.subComics.unsubscribe();
-  }
+  comics = this.comicsService.comics;
+  comicsError = this.comicsService.comicsError;
 }

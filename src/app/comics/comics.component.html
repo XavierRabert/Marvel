@@ -1,6 +1,6 @@
-<p>comics works!</p>
-<ul>
-  @for (comic of comics; track comic) {
-  <li>{{ comic.title }}</li>
+<h2 class="text-4xl font-bold text-gray-200">List of Comics</h2>
+<div class="flex w-full flex-wrap gap-6 justify-center mt-5">
+  @for (comic of comics(); track comic) {
+  <app-comic-card [comic]="comic"></app-comic-card>
   }
-</ul>
+</div>

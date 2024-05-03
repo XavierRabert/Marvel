@@ -1,13 +1,6 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CharactersService } from '../services/characters.service';
-import {
-  BehaviorSubject,
-  EMPTY,
-  Subscription,
-  catchError,
-  combineLatest,
-  tap,
-} from 'rxjs';
+
 import { RouterModule } from '@angular/router';
 import { AsyncPipe } from '@angular/common';
 import { CharacterComponent } from './character/character.component';
@@ -21,19 +14,11 @@ import { CharCardComponent } from './char-card/char-card.component';
   styleUrl: './characters.component.css',
 })
 export class CharactersComponent {
-  errorMessage = '';
-
   private charactersService = inject(CharactersService);
 
-  readonly characters$ = this.charactersService.characters$.pipe(
-    catchError((err) => {
-      this.errorMessage = err;
-      return EMPTY;
-    })
-  );
+  characters = this.charactersService.characters;
 
   onSelected(characterId: number) {
-    console.log('Selected ID:', characterId);
     this.charactersService.characterSelected(characterId);
   }
 }

@@ -1,4 +1,4 @@
-@if(characterDetail$ | async; as character){
+@if(characterDetail(); as character){
 <h2>{{ character.name }}</h2>
 <img
   src="{{ character.thumbnail.path }}/standard_fantastic.{{
