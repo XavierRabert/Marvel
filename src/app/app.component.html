@@ -1,6 +1,18 @@
-<ul>
-  <li>
-    <a href="/characters">Personatges</a>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<nav
+  class="block w-full px-4 py-3 shadow-md bg-gradient-to-tr from-gray-900 to-gray-500 fixed"
+>
+  <ul class="flex flex-wrap items-center text-white gap-6">
+    @for(menu of menuOptions; track menu){
+    <li>
+      <a
+        href="{{ menu.href }}"
+        class="mr-4 ml-2 block cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed tracking-normal text-inherit antialiased hover:text-red-300"
+        >{{ menu.title }}</a
+      >
+    </li>
+    }
+  </ul>
+</nav>
+<div class="p-8 bg-marvel-background bg-fixed lg:bg-cover">
+  <router-outlet></router-outlet>
+</div>

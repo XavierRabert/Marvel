@@ -1,6 +1,10 @@
-<p>characters works!</p>
-<ul>
+@if(characters$ | async; as characters){
+<h2 class="text-4xl font-bold">List of Characters</h2>
+
+<div class="flex w-full flex-wrap gap-6 justify-center mt-5">
   @for (char of characters; track char) {
-  <li>{{ char.name }}</li>
+  <app-char-card [character]="char"></app-char-card>
   }
-</ul>
+</div>
+
+}

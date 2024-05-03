@@ -1,0 +1,11 @@
+@if(characterDetail$ | async; as character){
+<h2>{{ character.name }}</h2>
+<img
+  src="{{ character.thumbnail.path }}/standard_fantastic.{{
+    character.thumbnail.extension
+  }}"
+  alt="char.name"
+/>
+@if(character.description){
+<p>{{ character.description }}</p>
+} }

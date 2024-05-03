@@ -1,26 +1,39 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { CharactersService } from '../services/characters.service';
-import { Subscription, tap } from 'rxjs';
+import {
+  BehaviorSubject,
+  EMPTY,
+  Subscription,
+  catchError,
+  combineLatest,
+  tap,
+} from 'rxjs';
+import { RouterModule } from '@angular/router';
+import { AsyncPipe } from '@angular/common';
+import { CharacterComponent } from './character/character.component';
+import { CharCardComponent } from './char-card/char-card.component';
 
 @Component({
   selector: 'app-characters',
   standalone: true,
-  imports: [],
+  imports: [AsyncPipe, RouterModule, CharacterComponent, CharCardComponent],
   templateUrl: './characters.component.html',
   styleUrl: './characters.component.css',
 })
-export class CharactersComponent implements OnInit, OnDestroy {
-  characters!: any;
-  subCharacters!: Subscription;
+export class CharactersComponent {
+  errorMessage = '';
 
-  constructor(private charactersService: CharactersService) {}
+  private charactersService = inject(CharactersService);
 
-  ngOnInit(): void {
-    this.subCharacters = this.charactersService
-      .getCharacters()
-      .pipe(tap((characters) => console.log(characters)))
-      .subscribe((characters) => (this.characters = characters));
+  readonly characters$ = this.charactersService.characters$.pipe(
+    catchError((err) => {
+      this.errorMessage = err;
+      return EMPTY;
+    })
+  );
+
+  onSelected(characterId: number) {
+    console.log('Selected ID:', characterId);
+    this.charactersService.characterSelected(characterId);
   }
-
-  ngOnDestroy(): void {}
 }
