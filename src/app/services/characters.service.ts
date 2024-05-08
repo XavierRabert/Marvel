@@ -9,6 +9,7 @@ import {
   shareReplay,
   switchMap,
   take,
+  tap,
   toArray,
 } from 'rxjs';
 import { Character } from '../types/characters';
@@ -22,10 +23,12 @@ export class CharactersService {
   constructor(private http: HttpClient) {}
 
   readonly characterSelectedId = signal(0);
+  readonly isLoading = signal(true);
 
   readonly characters$ = this.http
     .get<Character[]>('public/characters?limit=100')
     .pipe(
+      tap(() => this.isLoading.set(true)),
       filter(Boolean),
       map((data: any) => {
         return data.data.results as Character[];
@@ -35,7 +38,10 @@ export class CharactersService {
       toArray(),
       take(50),
       shareReplay(1),
-      map((data: Character[]) => ({ data: data } as Result<Character[]>))
+      map((data: Character[]) => {
+        this.isLoading.set(false);
+        return { data: data } as Result<Character[]>;
+      })
     );
 
   private charactersResult = toSignal(this.characters$, {
@@ -43,7 +49,7 @@ export class CharactersService {
   });
 
   characters = computed(() => this.charactersResult().data);
-  charactersError = computed(() => this.charactersResult().error);
+  charactersError = computed(() => this.charactersResult()?.error);
 
   private characterResult$ = toObservable(this.characterSelectedId).pipe(
     filter(Boolean),

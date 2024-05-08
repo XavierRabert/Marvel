@@ -1,10 +1,10 @@
-@if(characters(); as characters){
-<h2 class="text-4xl font-bold text-gray-200">List of Characters</h2>
-
-<div class="flex w-full flex-wrap gap-6 justify-center mt-5">
-  @for (char of characters; track char) {
+@if(isLoading()){
+<app-loader></app-loader>
+}@else{
+<h2 class="text-2xl md:text-4xl font-bold text-gray-200">List of Characters</h2>
+<div class="flex w-full flex-wrap gap-2 md:gap-6 justify-center mt-5">
+  @for (char of characters(); track char) {
   <app-char-card [character]="char"></app-char-card>
   }
 </div>
-
 }

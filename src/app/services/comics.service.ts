@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, computed } from '@angular/core';
+import { Injectable, computed, signal } from '@angular/core';
 import { concatAll, filter, map, shareReplay, take, tap, toArray } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Comic } from '../types/comics';
@@ -11,7 +11,10 @@ import { Result } from '../types/generic';
 export class ComicsService {
   constructor(private http: HttpClient) {}
 
+  readonly isLoading = signal(true);
+
   readonly comics$ = this.http.get<Comic[]>('public/comics?limit=100').pipe(
+    tap(() => this.isLoading.set(true)),
     filter(Boolean),
     map((data: any) => {
       return data.data.results as Comic[];
@@ -21,7 +24,10 @@ export class ComicsService {
     toArray(),
     take(50),
     shareReplay(1),
-    map((data: Comic[]) => ({ data: data } as Result<Comic[]>))
+    map((data: Comic[]) => {
+      this.isLoading.set(false);
+      return { data: data } as Result<Comic[]>;
+    })
   );
 
   private comicsResult = toSignal(this.comics$, {
