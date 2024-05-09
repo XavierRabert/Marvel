@@ -1,0 +1,23 @@
+.wallpaper {
+  justify-content: center;
+  align-items: center;
+}
+.enter_page {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #3333;
+  transition: 500ms all;
+  cursor: pointer;
+}
+.enter_page:hover {
+  background-color: red;
+  color: white;
+}

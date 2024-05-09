@@ -1,3 +1,6 @@
+@if(isVisible){
+<app-home />
+}@else{
 <nav
   class="block w-full px-4 py-3 shadow-md bg-gradient-to-tr from-gray-900 to-gray-500 fixed"
 >
@@ -5,7 +8,7 @@
     @for(menu of menuOptions; track menu){
     <li>
       <a
-        href="{{ menu.href }}"
+        [routerLink]="menu.href"
         class="mr-4 ml-2 block cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed tracking-normal text-inherit antialiased hover:text-red-300"
         >{{ menu.title }}</a
       >
@@ -18,3 +21,4 @@
 >
   <router-outlet></router-outlet>
 </div>
+}
