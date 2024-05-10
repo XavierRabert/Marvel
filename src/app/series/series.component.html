@@ -1,1 +1,12 @@
-<p>series works!</p>
+<h2 class="text-4xl font-bold text-gray-200">List of Series</h2>
+@if(isLoading()){
+<app-loader></app-loader>
+}@else{
+<div class="flex w-full flex-wrap gap-6 justify-center mt-5">
+  @for (serie of series(); track serie) {
+  <app-serie-card [serie]="serie"></app-serie-card>
+  }
+</div>
+}
+
+<h1>holii</h1>

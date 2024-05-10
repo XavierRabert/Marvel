@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { Subscription, tap } from 'rxjs';
 import { ComicsService } from '../services/comics.service';
 import { ComicCardComponent } from './comic-card/comic-card.component';
 import { LoaderComponent } from '../common/loader/loader.component';
