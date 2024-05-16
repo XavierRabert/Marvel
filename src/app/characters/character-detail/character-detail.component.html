@@ -1,0 +1,102 @@
+@if(isLoading()){
+<app-loader></app-loader>
+}@else{
+<section>
+  <div
+    class="flex flex-col max-w-7xl p-6 mx-auto bg-gradient-to-t from-red-200 to-gray-600 gap-4"
+  >
+    <div class="flex">
+      <img
+        src="{{ characterDetail()!.thumbnail.path }}/detail.{{
+          characterDetail()!.thumbnail.extension
+        }}"
+        alt="{{ characterDetail()!.name }}"
+        class="object-cover w-80 rounded lg:col-start-2 dark:bg-gray-500"
+      />
+      <div class="p-6 space-y-2 lg:col-start-3 lg:col-end-4">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          {{ characterDetail()!.name }}
+        </h3>
+        <span class="text-2xl text-gray-300">{{
+          (characterDetail()?.modified?.split("T"))![0]
+        }}</span>
+        <p class="text-2xl text-gray-300">
+          {{ characterDetail()!.description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+      <div class="p-6 space-y-2 col-start-1">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Comics
+        </h3>
+        <ul>
+          @for(comic of (characterDetail()?.comics?.items || []) ;track comic){
+          <li>
+            <a
+              [routerLink]="
+                '../../comics/' +
+                characterDetail()?.resourceURI?.substring(
+                  characterDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ comic.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+      <div class="p-6 space-y-2 col-start-2">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Series
+        </h3>
+        <ul>
+          @for(serie of (characterDetail()?.series?.items || []) ;track serie){
+          <li>
+            <a
+              [routerLink]="
+                '../../series/' +
+                characterDetail()?.resourceURI?.substring(
+                  characterDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ serie.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+      <div class="p-6 space-y-2 col-start-3">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Stories
+        </h3>
+        <ul>
+          @for(story of (characterDetail()?.stories?.items || []) ;track story){
+          <li>
+            <a
+              [routerLink]="
+                '../../comics/' +
+                characterDetail()?.resourceURI?.substring(
+                  characterDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ story.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+}

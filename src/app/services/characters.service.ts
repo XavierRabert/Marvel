@@ -54,7 +54,17 @@ export class CharactersService {
   private characterResult$ = toObservable(this.characterSelectedId).pipe(
     filter(Boolean),
     switchMap((id) => {
-      return this.http.get<Character>('public/comics/' + id).pipe(
+      return this.http.get<Character>('public/characters/' + id).pipe(
+        tap(() => this.isLoading.set(true)),
+        filter(Boolean),
+        map((data: any) => {
+          return data.data.results as Character[];
+        }),
+        shareReplay(1),
+        map((data: Character[]) => {
+          this.isLoading.set(false);
+          return { data: data[0] } as Result<Character>;
+        }),
         catchError((err) =>
           of({
             data: undefined,
@@ -62,8 +72,7 @@ export class CharactersService {
           } as Result<Character>)
         )
       );
-    }),
-    map((data) => ({ data: data } as Result<Character>))
+    })
   );
 
   private characterResult = toSignal(this.characterResult$);
@@ -71,7 +80,7 @@ export class CharactersService {
   character = computed(() => this.characterResult()?.data);
   characterError = computed(() => this.characterResult()?.error);
 
-  characterSelected(selectedCharacterId: number): void {
+  selectCharacter(selectedCharacterId: number): void {
     this.characterSelectedId.set(selectedCharacterId);
   }
 }

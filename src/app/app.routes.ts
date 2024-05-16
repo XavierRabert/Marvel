@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { CharactersComponent } from './characters/characters.component';
 import { SeriesComponent } from './series/series.component';
 import { ComicsComponent } from './comics/comics.component';
-import { CharacterComponent } from './characters/character/character.component';
+import { CharacterDetailComponent } from './characters/character-detail/character-detail.component';
 
 export const routes: Routes = [
   {
@@ -11,7 +11,7 @@ export const routes: Routes = [
   },
   {
     path: 'character/:id',
-    component: CharacterComponent,
+    component: CharacterDetailComponent,
   },
   {
     path: 'series',

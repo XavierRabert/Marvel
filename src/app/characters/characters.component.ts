@@ -1,8 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CharactersService } from '../services/characters.service';
 
 import { RouterModule } from '@angular/router';
-import { CharacterComponent } from './character/character.component';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
 import { CharCardComponent } from './char-card/char-card.component';
 import { LoaderComponent } from '../common/loader/loader.component';
 
@@ -11,7 +11,7 @@ import { LoaderComponent } from '../common/loader/loader.component';
   standalone: true,
   imports: [
     RouterModule,
-    CharacterComponent,
+    CharacterDetailComponent,
     CharCardComponent,
     LoaderComponent,
   ],
@@ -23,8 +23,4 @@ export class CharactersComponent {
 
   characters = this.charactersService.characters;
   isLoading = this.charactersService.isLoading;
-
-  onSelected(characterId: number) {
-    this.charactersService.characterSelected(characterId);
-  }
 }
