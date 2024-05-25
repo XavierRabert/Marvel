@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Serie } from '../../types/series';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
+import { Router } from '@angular/router';
+import { SeriesService } from '../../services/series.service';
 
 @Component({
   selector: 'app-serie-card',
@@ -11,4 +13,12 @@ import { TruncatePipe } from '../../pipes/truncate.pipe';
 })
 export class SerieCardComponent {
   @Input() serie!: Serie;
+
+  private serieService = inject(SeriesService);
+  private router = inject(Router);
+
+  onClickViewDetail(serieId: number) {
+    this.serieService.selectSerie(serieId);
+    this.router.navigate(['/serie/' + serieId]);
+  }
 }

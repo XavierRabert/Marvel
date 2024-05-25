@@ -1,1 +1,107 @@
-<p>serie-detail works!</p>
+@if(isLoading()){
+<app-loader></app-loader>
+}@else{
+<section>
+  <div
+    class="flex flex-col max-w-7xl p-6 mx-auto bg-gradient-to-t from-red-200 to-gray-600 gap-4"
+  >
+    <div class="flex flex-col md:flex-row">
+      <img
+        src="{{ serieDetail()!.thumbnail.path }}/detail.{{
+          serieDetail()!.thumbnail.extension
+        }}"
+        alt="{{ serieDetail()!.title }}"
+        class="object-cover w-80 rounded lg:col-start-2 dark:bg-gray-500"
+      />
+      <div class="p-6 space-y-2 lg:col-start-3 lg:col-end-4">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          {{ serieDetail()!.title }}
+        </h3>
+        <span class="text-2xl text-gray-300">{{
+          (serieDetail()?.modified?.split("T"))![0]
+        }}</span>
+        <p class="text-2xl text-gray-300">
+          {{ serieDetail()!.description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row">
+      @if(serieDetail()?.characters?.available!>0){
+      <div class="p-6 space-y-2 flex-1">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Characters
+        </h3>
+        <ul>
+          @for(character of (serieDetail()?.characters?.items) ;track
+          character){
+          <li>
+            <a
+              [routerLink]="
+                '../../characters/' +
+                serieDetail()?.resourceURI?.substring(
+                  serieDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ character.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+      } @if(serieDetail()?.comics){
+      <div class="p-6 space-y-2 flex-1">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Comics
+        </h3>
+        <ul>
+          @for(comic of (serieDetail()?.comics?.items || []) ;track comic){
+          <li>
+            <a
+              [routerLink]="
+                '../../comics/' +
+                serieDetail()?.resourceURI?.substring(
+                  serieDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ comic.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+      } @if(serieDetail()?.stories){
+      <div class="p-6 space-y-2 flex-1">
+        <h3
+          class="text-3xl text-stone-200 font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+        >
+          Stories
+        </h3>
+        <ul>
+          @for(story of (serieDetail()?.stories?.items || []) ;track story){
+          <li>
+            <a
+              [routerLink]="
+                '../../comics/' +
+                serieDetail()?.resourceURI?.substring(
+                  serieDetail()?.resourceURI!.lastIndexOf('/') + 1
+                )
+              "
+              >{{ story.name }}</a
+            >
+          </li>
+          }
+        </ul>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+}
