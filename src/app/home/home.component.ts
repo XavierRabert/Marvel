@@ -1,6 +1,7 @@
 import { Component, effect, inject } from '@angular/core';
 import { GeneralService } from '../services/general.service';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { Subscription } from 'rxjs';
 export class HomeComponent {
   private subscription!: Subscription;
   isVisible!: boolean;
-  constructor(private generalService: GeneralService) {}
+  constructor(private generalService: GeneralService, private router: Router) {}
 
   ngOnInit(): void {
     this.subscription = this.generalService.data$.subscribe(
@@ -26,5 +27,6 @@ export class HomeComponent {
 
   onClickEnter() {
     this.generalService.enter();
+    this.router.navigate(['/characters/']);
   }
 }
