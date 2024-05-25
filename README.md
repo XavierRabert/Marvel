@@ -1,27 +1,63 @@
-# Marvel
+# Angular Project: Marvel App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+<a href="https://www.marvel.com/" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="Marvel" style="width:300px;">
+</a>
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a web application built with Angular that consumes Marvel API. The application allows users to search for superheroes, comics or series, and explore details.
 
-## Code scaffolding
+You can see the publiched project on [Netlify](https://landing-angular-marvel.netlify.app/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![947shots_so](https://github.com/XavierRabert/Marvel/assets/115178344/16329134-4602-453e-ae36-6eca316faf34)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+- Search for superheroes, comics and series.
+- View detailed information about a specific superhero, including comics and series.
+- Responsive and user-friendly interface.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+- [Angular 17](https://angular.io/)
+- [Angular Router](https://angular.io/guide/router)
+- [HttpClient](https://angular.io/guide/http) for HTTP requests.
+- [RxJS](https://rxjs.dev/) for reactive programming.
+- [Signals](https://angular.io/guide/signals) for state management.
+- [Marvel API](https://developer.marvel.com/docs) for superhero data.
+- CSS for styling and design.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Installation
 
-## Further help
+To run this project on your local machine, follow these steps:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/XavierRabert/Marvel.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd marvel
+    ```
+
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Start the application:
+    ```bash
+    ng serve
+    ```
+
+The application will be available at [http://localhost:4200](http://localhost:4200).
+
+
+## Usage
+
+1. Open the application in your browser.
+2. Use the navigation bar your can try to see your favorite superheroes, comics or series.
+3. Click on a superhero to see more details.
