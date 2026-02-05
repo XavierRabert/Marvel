@@ -1,0 +1,1806 @@
+{
+  "data": {
+    "results": [
+      {
+        "id": 1,
+        "name": "Spider-Man",
+        "description": "Spider-Man is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/spiderman",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 2,
+        "name": "Iron Man",
+        "description": "Iron Man is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/ironman",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/2",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 3,
+        "name": "Captain America",
+        "description": "Captain America is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/captainamerica",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/3",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 4,
+        "name": "Thor",
+        "description": "Thor is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/thor",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/4",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 5,
+        "name": "Hulk",
+        "description": "Hulk is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/hulk",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/5",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 6,
+        "name": "Black Widow",
+        "description": "Black Widow is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/blackwidow",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/6",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 7,
+        "name": "Hawkeye",
+        "description": "Hawkeye is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/hawkeye",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/7",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 8,
+        "name": "Doctor Strange",
+        "description": "Doctor Strange is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/doctorstrange",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/8",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 9,
+        "name": "Black Panther",
+        "description": "Black Panther is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/blackpanther",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/9",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 10,
+        "name": "Scarlet Witch",
+        "description": "Scarlet Witch is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/scarletwitch",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/10",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 11,
+        "name": "Vision",
+        "description": "Vision is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/vision",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/11",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 12,
+        "name": "Ant-Man",
+        "description": "Ant-Man is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/antman",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/12",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 13,
+        "name": "Wasp",
+        "description": "Wasp is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/wasp",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/13",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 14,
+        "name": "Star-Lord",
+        "description": "Star-Lord is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/starlord",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/14",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 15,
+        "name": "Gamora",
+        "description": "Gamora is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/gamora",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/15",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 16,
+        "name": "Drax",
+        "description": "Drax is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/drax",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/16",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 17,
+        "name": "Rocket Raccoon",
+        "description": "Rocket Raccoon is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/rocketraccoon",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/17",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 18,
+        "name": "Groot",
+        "description": "Groot is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/groot",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/18",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 19,
+        "name": "Loki",
+        "description": "Loki is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/loki",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/19",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 20,
+        "name": "Nick Fury",
+        "description": "Nick Fury is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/nickfury",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/20",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 21,
+        "name": "Wolverine",
+        "description": "Wolverine is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/wolverine",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/21",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 22,
+        "name": "Deadpool",
+        "description": "Deadpool is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/deadpool",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/22",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 23,
+        "name": "Storm",
+        "description": "Storm is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/storm",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/23",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 24,
+        "name": "Cyclops",
+        "description": "Cyclops is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/cyclops",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/24",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 25,
+        "name": "Jean Grey",
+        "description": "Jean Grey is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/jeangrey",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/25",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 26,
+        "name": "Magneto",
+        "description": "Magneto is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/magneto",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/26",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 27,
+        "name": "Professor X",
+        "description": "Professor X is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/professorx",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/27",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 28,
+        "name": "Daredevil",
+        "description": "Daredevil is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/daredevil",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/28",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 29,
+        "name": "Punisher",
+        "description": "Punisher is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/punisher",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/29",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 30,
+        "name": "Venom",
+        "description": "Venom is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/venom",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/30",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 31,
+        "name": "Doctor Doom",
+        "description": "Doctor Doom is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/doctordoom",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/31",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 32,
+        "name": "Fantastic Four",
+        "description": "Fantastic Four is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/fantasticfour",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/32",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 33,
+        "name": "Silver Surfer",
+        "description": "Silver Surfer is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/silversurfer",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/33",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 34,
+        "name": "Galactus",
+        "description": "Galactus is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/galactus",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/34",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 35,
+        "name": "Thanos",
+        "description": "Thanos is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/thanos",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/35",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 36,
+        "name": "Shang-Chi",
+        "description": "Shang-Chi is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/shangchi",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/36",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 37,
+        "name": "Moon Knight",
+        "description": "Moon Knight is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/moonknight",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/37",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 38,
+        "name": "Ms. Marvel",
+        "description": "Ms. Marvel is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/msmarvel",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/38",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 39,
+        "name": "Captain Marvel",
+        "description": "Captain Marvel is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/captainmarvel",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/39",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 40,
+        "name": "Ghost Rider",
+        "description": "Ghost Rider is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/ghostrider",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/40",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 41,
+        "name": "Blade",
+        "description": "Blade is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/blade",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/41",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 42,
+        "name": "Elektra",
+        "description": "Elektra is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/elektra",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/42",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 43,
+        "name": "Kingpin",
+        "description": "Kingpin is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/kingpin",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/43",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 44,
+        "name": "Green Goblin",
+        "description": "Green Goblin is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/greengoblin",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/44",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 45,
+        "name": "Ultron",
+        "description": "Ultron is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/ultron",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/45",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 46,
+        "name": "Red Skull",
+        "description": "Red Skull is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/redskull",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/46",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 47,
+        "name": "Winter Soldier",
+        "description": "Winter Soldier is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/wintersoldier",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/47",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 48,
+        "name": "Falcon",
+        "description": "Falcon is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/falcon",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/48",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 49,
+        "name": "She-Hulk",
+        "description": "She-Hulk is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/shehulk",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/49",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      },
+      {
+        "id": 50,
+        "name": "War Machine",
+        "description": "War Machine is one of Marvel's iconic characters.",
+        "modified": "2024-01-01T00:00:00Z",
+        "thumbnail": {
+          "path": "assets/img/characters/warmachine",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/50",
+        "comics": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "",
+          "items": [],
+          "returned": 0
+        },
+        "urls": []
+      }
+    ]
+  }
+}

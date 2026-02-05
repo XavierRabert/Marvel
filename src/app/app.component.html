@@ -1,24 +1,44 @@
-@if(isVisible){
-<app-home />
-}@else{
-<nav
-  class="block w-full px-4 py-3 shadow-md bg-gradient-to-tr from-gray-900 to-gray-500 fixed"
->
-  <ul class="flex flex-wrap items-center text-white gap-6">
-    @for(menu of menuOptions; track menu){
-    <li>
-      <a
-        [routerLink]="menu.href"
-        class="mr-4 ml-2 block cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed tracking-normal text-inherit antialiased hover:text-red-300"
-        >{{ menu.title }}</a
+@if (isVisible) {
+  <app-home />
+} @else {
+  <nav
+    class="block w-full px-4 py-3 shadow-md bg-gradient-to-tr from-gray-900 to-gray-500 fixed"
+  >
+    <ul class="flex flex-wrap items-center text-white gap-6">
+      @for (menu of menuOptions; track menu) {
+        <li>
+          <a
+            [routerLink]="menu.href"
+            class="mr-4 ml-2 block cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed tracking-normal text-inherit antialiased hover:text-red-300"
+            >{{ menu.title }}</a
+          >
+        </li>
+      }
+    </ul>
+    @if (apiDeprecated()) {
+      <div
+        class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-md px-4 py-2.5 mb-5"
       >
-    </li>
+        <p
+          class="text-xs text-slate-600 dark:text-slate-400 flex items-center gap-2"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span
+            >Marvel API is no longer available • Showing local demo data</span
+          >
+        </p>
+      </div>
     }
-  </ul>
-</nav>
-<div
-  class="pt-20 p-2 md:px-8 bg-marvel-background bg-fixed lg:bg-cover min-h-screen"
->
-  <router-outlet></router-outlet>
-</div>
+  </nav>
+  <div
+    class="pt-20 p-2 md:px-8 bg-marvel-background bg-fixed lg:bg-cover min-h-screen"
+  >
+    <router-outlet></router-outlet>
+  </div>
 }

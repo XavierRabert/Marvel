@@ -1,6 +1,10 @@
 import { HttpInterceptorFn, HttpParams } from '@angular/common/http';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
+  if (req.url.startsWith('assets/')) {
+    return next(req);
+  }
+
   const apiURL = 'https://gateway.marvel.com:443/v1/';
 
   const apiKey = [
@@ -15,14 +19,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     newParams = newParams.append(param.key, param.value);
   });
 
-  // Añadir en los headers
-  // const authReq = req.clone({
-  //   headers: req.headers.set('X-API-KEY', apiKey)
-  // });
-
-  // Clona la solicitud para añadir los nuevos parámetros o headers
   const authReq = req.clone({ url: apiURL + req.url, params: newParams });
 
-  // Envía la solicitud clonada con la API key añadida
   return next(authReq);
 };

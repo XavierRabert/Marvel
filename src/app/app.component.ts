@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GeneralService } from './services/general.service';
@@ -12,15 +12,18 @@ import { Subscription } from 'rxjs';
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit, OnDestroy {
+  private _generalService = inject(GeneralService);
+
   title = 'Marvel';
 
   private subscription!: Subscription;
   isVisible!: boolean;
-  constructor(private generalService: GeneralService) {}
+
+  public apiDeprecated = this._generalService.apiDeprecated;
 
   ngOnInit(): void {
-    this.subscription = this.generalService.data$.subscribe(
-      (data) => (this.isVisible = data)
+    this.subscription = this._generalService.data$.subscribe(
+      (data) => (this.isVisible = data),
     );
   }
 
